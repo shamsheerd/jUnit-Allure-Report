@@ -22,7 +22,7 @@ public class TestCalculatorFullExample extends TestingCalculator {
     @Severity(SeverityLevel.CRITICAL)
     @Features("CR 256A :This is adding ")
     @Stories("User can add two numbers")
-    public void testAddition(){
+    public void testAdditionJenkinsIntegration(){
         Assert.assertEquals(25.0, aCalculator.add(10.0,15.0), 0.01);
     }
 
@@ -36,7 +36,7 @@ public class TestCalculatorFullExample extends TestingCalculator {
     @Stories({"User can sub two numbers",
             "This will do substruction\n" +
                     "Among two numbers"} )   //multi line stories
-    public void testSub(){
+    public void testSubJenkinsIntegration(){
         Assert.assertEquals(25.0, aCalculator.sub(10.0,15.0), 0.01);
     }
 
